@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunaris Studio</title>
+  <link rel="icon" type="image/png" href="images/icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at top, #0b0f2c 0%, #000 100%), url('images/fondo.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #e0e8ff;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 1.2rem;
+      border-radius: 50%;
+      border: 2px solid #a7a7a7;
+      box-shadow: 0 0 20px rgba(117, 117, 117, 0.5);
+      overflow: hidden;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #ffffff;
+      text-shadow: 0 0 10px #909090;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1.5rem;
+      color: #dbdbdb;
+    }
+
+    .screenshot-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .screenshot {
+      width: 480px;
+      border-radius: 15px;
+      border: 1px solid #555;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .screenshot:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(208, 208, 208, 0.6);
+    }
+
+    .button {
+      display: inline-block;
+      background: linear-gradient(135deg, #969696, #696969);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0.5rem;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background: linear-gradient(135deg, #c3c3c3, #747474);
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #95a5a6;
+      text-shadow: 0 0 5px #000;
+    }
+    #volver-inicio {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  background: #2d3436;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+  z-index: 999;
+}
+
+#volver-inicio:hover {
+  background: #636e72;
+}
+
+  </style>
+  <script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="images/icon.png" alt="Logo Lunaris">
+    </div>
+    <h1>Lunaris Studio</h1>
+    <p>¡Descarga Lunaris Client aquí!</p>
+    <p>Lunaris Client es nuestro launcher oficial de Minecraft para eventos organizados por nosotros.</p>
+  </header>
+
+  <div class="screenshot-container">
+    <img class="screenshot" src="images/menu.png" alt="Captura 1">
+    <img class="screenshot" src="images/options.png" alt="Captura 2">
+  </div>
+<a href="index.html" id="volver-inicio" title="Volver al inicio">←</a>
+
+  <div>
+    <a href="https://github.com/ITZAE333222M/Lunaris-Client/releases/download/2.0.3/Lunaris-Client-win-x64.exe" class="button" download>Descargar para Windows</a>
+    <a href="https://github.com/ITZAE333222M/Lunaris-Client/releases/download/2.0.3/Lunaris-Client-linux-x86_64.AppImage" class="button" download>Descargar para Linux</a>
+    <a href="https://github.com/ITZAE333222M/Lunaris-Client/releases/download/2.0.3/Lunaris-Client-mac-universal.dmg" class="button" download>Descargar para Mac OS</a>
+  </div>
+
+  <p><b>¿Tienes dudas o errores? ¡Únete a nuestro Discord!</b></p>
+  <p>
+    <a href="https://discord.gg/JpGfEPsBVb" class="button">Discord Lunaris Studio</a>
+  </p>
+
+  <footer>
+    © 2025 Lunaris Studio · Todos los derechos reservados
+  </footer>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Lunaris Studio</title>
+  <title>Proyectos | Lunaris Studio</title>
   <link rel="icon" type="image/png" href="images/icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rubik&display=swap" rel="stylesheet">
   <style>
@@ -95,42 +95,42 @@
       margin: 0 auto;
     }
 
-    .sections {
+    .projects {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 40px;
-      padding: 90px 40px;
+      gap: 30px;
+      padding: 80px 30px;
       background: rgba(0, 0, 30, 0.9);
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.06);
+    .project-card {
+      background: rgba(255, 255, 255, 0.07);
       border: 1px solid #3a3a66;
-      border-radius: 18px;
-      padding: 35px 25px;
-      width: 1000px;
+      border-radius: 16px;
+      padding: 25px 20px;
+      width: 300px;
       text-align: center;
       backdrop-filter: blur(6px);
-      box-shadow: 0 0 15px #0c143b;
+      box-shadow: 0 0 12px #0c143b;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .card:hover {
+    .project-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 0 25px #9c9c9c;
+      box-shadow: 0 0 22px #9c9c9c;
     }
 
-    .card h3 {
-      font-size: 1.5em;
+    .project-card h3 {
+      font-size: 1.3em;
+      margin-bottom: 10px;
       color: #ffffff;
-      margin-bottom: 15px;
-      text-shadow: 0 0 6px #9c9c9c;
+      text-shadow: 0 0 5px #9c9c9c;
     }
 
-    .card p {
-      color: #f0f3ff;
-      font-size: 1em;
+    .project-card p {
+      color: #e0eaff;
+      font-size: 0.95em;
     }
 
     footer {
@@ -158,7 +158,7 @@
         font-size: 2.5em;
       }
 
-      .card {
+      .project-card {
         width: 90%;
       }
     }
@@ -178,15 +178,22 @@
   </header>
 
   <section class="hero">
-    <h1>Explora el universo de los eventos Minecraft</h1>
-    <p>En Lunaris Studio diseñamos experiencias unicas para jugadores y creadores de contenido. ¡Únete a nuestra comunidad!</p>
+    <h1>Nuestros Proyectos</h1>
+    <p>Conoce algunas de las creaciones de Lunaris Studio.</p>
   </section>
 
-  <section class="sections">
-    <div class="card">
-      <h3>🪐 Eventos de Minecraft</h3>
-      <p>Eventos propios, recreaciones y mucho más dentro de nuestro grande studio.</p>
-    </div>
+  <section class="projects">
+<div class="project-card">
+  <div class="project-image">
+    <img src="/images/space.png" alt="Squid Space Games">
+    <div class="project-badge">Próximamente</div>
+  </div>
+  <div class="project-content">
+    <h3>🦑 Squid Space Games</h3>
+    <p>Evento al estilo squid games pero totalmente con nuestra temática y juegos originales.</p>
+  </div>
+</div>
+    <!-- Agrega más tarjetas duplicando la estructura de .project-card -->
   </section>
 
   <footer>

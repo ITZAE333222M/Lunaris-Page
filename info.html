@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Lunaris Studio</title>
+  <title>Sobre Nosotros - Lunaris Studio</title>
   <link rel="icon" type="image/png" href="images/icon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rubik&display=swap" rel="stylesheet">
   <style>
@@ -95,42 +95,31 @@
       margin: 0 auto;
     }
 
-    .sections {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      padding: 90px 40px;
+    .about-section {
       background: rgba(0, 0, 30, 0.9);
+      padding: 90px 40px;
+      text-align: center;
     }
 
-    .card {
+    .about-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      color: #ffffff;
+      text-shadow: 0 0 8px #9c9c9c;
+    }
+
+    .about-content {
+      max-width: 1000px;
+      margin: 0 auto;
       background: rgba(255, 255, 255, 0.06);
+      padding: 40px;
+      border-radius: 20px;
       border: 1px solid #3a3a66;
-      border-radius: 18px;
-      padding: 35px 25px;
-      width: 1000px;
-      text-align: center;
       backdrop-filter: blur(6px);
       box-shadow: 0 0 15px #0c143b;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 0 25px #9c9c9c;
-    }
-
-    .card h3 {
-      font-size: 1.5em;
-      color: #ffffff;
-      margin-bottom: 15px;
-      text-shadow: 0 0 6px #9c9c9c;
-    }
-
-    .card p {
-      color: #f0f3ff;
-      font-size: 1em;
+      color: #e4eaff;
+      font-size: 1.1em;
+      line-height: 1.8;
     }
 
     footer {
@@ -158,7 +147,7 @@
         font-size: 2.5em;
       }
 
-      .card {
+      .about-content {
         width: 90%;
       }
     }
@@ -167,7 +156,8 @@
 <body>
 
   <header>
-    <img src="/images/peque.png"><div class="logo">Lunaris Studio</div>
+    <img src="/images/peque.png">
+    <div class="logo">Lunaris Studio</div>
     <nav>
       <a href="index.html">Inicio</a>
       <a href="Eventos.html">Eventos</a>
@@ -178,14 +168,18 @@
   </header>
 
   <section class="hero">
-    <h1>Explora el universo de los eventos Minecraft</h1>
-    <p>En Lunaris Studio diseñamos experiencias unicas para jugadores y creadores de contenido. ¡Únete a nuestra comunidad!</p>
+    <h1>¿Quiénes somos?</h1>
+    <p>Conoce sobre nosotros y nuestros objetivos!</p>
   </section>
 
-  <section class="sections">
-    <div class="card">
-      <h3>🪐 Eventos de Minecraft</h3>
-      <p>Eventos propios, recreaciones y mucho más dentro de nuestro grande studio.</p>
+  <section class="about-section">
+    <h2>Sobre Lunaris Studio</h2>
+    <div class="about-content">
+      <p><strong>Lunaris Studio</strong> es un estudio especializado en el diseño y desarrollo de <strong>eventos personalizados dentro de Minecraft</strong>. Nuestro objetivo es dar grandes experiencias, divertidas y únicas tanto para jugadores como para creadores de contenido.</p>
+
+      <p>Desde recreaciones de eventos populares hasta eventos originales creados por nosotros, Lunaris Studio hace lo posible por la <strong>calidad</strong> y la <strong>buena experiencia de la comunidad</strong> en nuestros eventos. Nos apasiona el crear eventos y los desafíos que conllevan esto, lo cual se refleja en cada uno de nuestros proyectos.</p>
+
+      <p>🌙 <em>Únete a nosotros y forma parte de esta gran comunidad.</em></p>
     </div>
   </section>
 
