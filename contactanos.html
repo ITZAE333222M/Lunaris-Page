@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Contactanos </title>
-    </head>
-    <body>
-        <h1> Actualmente en mantenimiento.</h1>
-        <a href="index.html" class="button"> Regresar </a>
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos - Lunaris Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at top, #0a0c1a 0%, #000000 100%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .container {
+      background: rgba(30, 35, 60, 0.8);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(100, 150, 255, 0.2);
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #b0c8ff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      color: #87aaff;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .contact-info a:hover {
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background-color: #1f233d;
+      color: white;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #4455ff;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #627aff;
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url('images/fondocon.png') repeat;
+      animation: moveStars 200s linear infinite;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    @keyframes moveStars {
+      0% { background-position: 0 0; }
+      100% { background-position: 10000px 10000px; }
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      display: inline-block;
+      color: #aaa;
+      font-size: 0.9em;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .back-btn:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="stars"></div>
+
+  <div class="container">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes preguntas, ideas o quieres colaborar con Lunaris Studio?<br> ¡Envíanos un mensaje o contáctanos directamente!</p>
+
+    <div class="contact-info">
+      <a href="https://discord.gg/JpGfEPsBVb" target="_blank">💬 Discord</a>
+    </div>
+
+    <form action="https://formspree.io/f/xwpqrlvk" method="POST">
+  <input type="text" name="name" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu correo electrónico" required>
+  <textarea name="message" placeholder="Tu mensaje..." required></textarea>
+  <button type="submit">Enviar mensaje</button>
+    </form>
+
+
+    <a href="index.html" class="back-btn">← Volver al inicio</a>
+  </div>
+
+</body>
 </html>
